@@ -23,9 +23,32 @@ describe('Thermostat', () => {
 
   it("temperature can't decrease lower than 10", () => {
     for (var i = 0; i < 10; i++) {
-      thermostat.down()
-      console.log(thermostat)
+      thermostat.down();
     }
     expect(function() { thermostat.down() ;}).toThrow("Minimum temperature reached")
   });
+
+  describe('Powersave functionality', () => {
+
+    it("starts with power saving mode ON", () => {
+      expect(thermostat.isPowerSaveOn()).toBe(true);
+    });
+
+    it('has a max temperature of 25 when ON', () => {
+      for (var i = 0; i < 5; i++) {
+        thermostat.up();
+      }
+      expect(function() { thermostat.up() ;}).toThrow("Maximum temperature for PowerSave mode reached")
+    });
+
+    it('has a max temperature of 32 when OFF', () => {
+      thermostat.powerSaveOn = false;
+      for (var i = 0; i < 12; i++) {
+        thermostat.up();
+      }
+      expect(function() { thermostat.up() ;}).toThrow("Maximum temperature reached")
+    });
+  });
+
+  
 })
