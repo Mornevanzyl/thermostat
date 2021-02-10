@@ -20,4 +20,12 @@ describe('Thermostat', () => {
     thermostat.down()
     expect(thermostat.temperature).toEqual(19);
   });
+
+  it("temperature can't decrease lower than 10", () => {
+    for (var i = 0; i < 10; i++) {
+      thermostat.down()
+      console.log(thermostat)
+    }
+    expect(function() { thermostat.down() ;}).toThrow("Minimum temperature reached")
+  });
 })
