@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Thermostat</title>
+</head>
+<body>
+    <main>
+        <div id="thermostat">
+            <div id="powersave">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <div class="main-display">
+                <div id="temp-down">
+                    <button class='btn-down'><i class="fas fa-chevron-down"></i></button>
+                </div>
+                <div id="temp">
+                    25
+                </div>
+                <div id="temp-up">
+                    <button class='btn-up'><i class="fas fa-chevron-up"></i></button>
+                </div>
+            </div>
+            <div id="reset">
+                <button>Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="src/Thermostat.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 222, 222);
+}
+
+#thermostat {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: orange;
+    background: radial-gradient( orange, rgb(250, 115, 4));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 30px solid grey;
+    padding: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-display {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 23%;
+}
+
+#temp-up, #temp-down {
+    margin: 15px;
+}
+
+button:hover {
+    color: tomato;
+}
+
+.btn-up:hover {
+    color: tomato;
+}
+
+.btn-down:hover {
+    color: rgb(46, 135, 250);
+}
+
+.fas {
+    font-size: 2rem;
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#temp {
+    font-size: 130px;
+    color: white;
+    font-weight: bold;
+    padding-top: 0.8rem;
+    /* padding-right: 0.6rem; */
+}
+
+#powersave {
+    font-weight: bold;
+    color: white;
+    opacity: 0.4;
+    position: absolute;
+    top: 4%;
+    left: 44%;
+}
+
+#reset {
+    position: absolute;
+    bottom: 6%;
+    left: 41%;
+}
+
+#powersave:hover {
+    opacity: 1;
+}
