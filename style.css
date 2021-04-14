@@ -17,25 +17,34 @@ main {
   background-color: rgb(245, 222, 222);
 }
 
+.thermostat-ring {
+  width: 380px;
+  height: 380px;
+  color: white;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(160, 160, 160) 0%,
+    rgb(118, 117, 117) 40%,
+    rgb(227, 226, 226) 85%,
+    rgb(160, 160, 160) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 19px 48px,
+    rgba(0, 0, 0, 0.35) 10px 15px 12px;
+}
+
 #thermostat {
   width: 220px;
   height: 220px;
+  margin: 30px 0 0 30px;
   position: relative;
   background-color: orange;
   background: radial-gradient(orange, rgb(250, 115, 4));
-  /* background: conic-gradient(
-        #559bb7 0%,
- 
-        #ff643d 100%
-      ); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  border: 30px solid grey;
   padding: 50px;
   border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main-display {
