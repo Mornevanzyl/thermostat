@@ -1,4 +1,4 @@
-![Bowling](https://github.com/Mornevanzyl/bowling-challenge/blob/master/images/thermostat.jpg?raw=true)
+![Thermostat](https://github.com/Mornevanzyl/thermostat/blob/main/images/thermostat.jpg?raw=true)
 
 # Thermostat
 
