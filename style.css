@@ -15,7 +15,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: rgb(245, 222, 222);
-  background: url("./wall.jpg");
+  background: url("./images/wall.jpg");
 }
 
 .thermostat-ring {
