@@ -27,6 +27,7 @@ class Thermostat {
 
   reset() {
     this.temperature = 20;
+    this.setPowerSaveMode(true)
   }
 
   isPowerSaveOn() {
@@ -38,13 +39,17 @@ class Thermostat {
   }
 
   energyUsage() {
-    console.log("hello")
     if (this.temperature < 18) {
       return 'low-usage';
     } else if (this.temperature <= 25) {
       return 'medium-usage';
     };
-    console.log('final')
     return 'high-usage';
+  }
+
+  outsideTemp() {
+    $.get('http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=a3d9eb01d4de82b9b8d0849ef604dbed&units=metric', function(data) {
+  console.log(data.main.temp);
+})
   }
 }

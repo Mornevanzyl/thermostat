@@ -11,8 +11,13 @@
 <body>
     <main>
         <div id="thermostat">
-            <div id="powersave">
-                <i class="fas fa-leaf"></i>
+            <div class="energy-icons">
+                <button id="usage">
+                    <i class="fas fa-burn"></i>
+                </button>
+                <button id="powersave">
+                    <i class="fas fa-leaf"></i>
+                </button>
             </div>
             <div class="main-display">
                 <div id="temp-down">
@@ -25,11 +30,18 @@
                     <button class='btn-up'><i class="fas fa-chevron-up"></i></button>
                 </div>
             </div>
-            <div id="reset">
-                <button>Reset</button>
+            <div class="bottom-icons">
+                <div id="reset">
+                    <button><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div id="outside">
+                    <button><i class="fas fa-door-open"></i>></button>
+                </div>
             </div>
         </div>
     </main>
     <script src="src/Thermostat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="src/interface.js"></script>
 </body>
 </html>
