@@ -15,7 +15,7 @@ open SpecRunner.html
 ## Usage
 
 ```JS
-open index.html # in your browser
+open index.html # in your browser.
 
 # Use the web interface or,
 # Use the console in Chrome Developer Tools
